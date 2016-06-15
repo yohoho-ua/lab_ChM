@@ -1,0 +1,16 @@
+.button {
+    -fx-font: bold italic 14pt "Arial";
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+.vbox {
+    -fx-border-color: #2e8b57;
+    -fx-border-width: 2px;
+    -fx-padding: 10;
+    -fx-spacing: 8;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #2754e9; }
+.default-color1.chart-series-line { -fx-stroke: #2754e9; }
+.default-color2.chart-series-line { -fx-stroke: #2754e9; }
+.default-color3.chart-series-line { -fx-stroke: #2754e9; }
