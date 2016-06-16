@@ -13,10 +13,12 @@ public class TestMatrix {
         File file2 = new File("matrix2.txt");
         File file3 = new File("matrix3.txt");
         File file33 = new File("matrix33.txt");
+        File file5 = new File("matrix5.txt");
+        File fileMain = new File("matrix5Main.txt");
 
         ArrayList <String []> strings = new ArrayList<>();
 
-        Scanner input = new Scanner(file3);
+        Scanner input = new Scanner(fileMain);
         while(input.hasNext()) {
             //System.out.println(input.nextLine());
             strings.add(input.nextLine().split(","));
@@ -53,9 +55,14 @@ public class TestMatrix {
 
         Matrix mat = new Matrix(matrix, free);
         mat.solve();
-        System.out.println("\n Det = " + mat.getDet());
 
         System.out.println(mat.getLog());
+        System.out.println("\n Det = " + mat.getDet());
+        String [] roots = mat.getRoots();
+        for (String root : roots) {
+        System.out.print(root + "  ");
+
+        }
     }
 
 }
